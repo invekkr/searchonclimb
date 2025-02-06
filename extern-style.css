@@ -1,0 +1,54 @@
+.fixed-contact-logo {
+    position: fixed;
+    bottom: 20px; /* Adjust for distance from the bottom */
+    right: 20px; /* Adjust for distance from the right */
+    z-index: 9999; /* Ensure it stays on top of other content */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px; /* Space between the icons */
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Background for contrast */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for effect */
+    transition: transform 0.3s ease; /* Smooth scaling animation */
+  }
+  
+  .logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .whats-icon {
+    background-color: #25d366; /* WhatsApp green color */
+  }
+  
+  .tele-icon {
+    background-color: #0497F2; /* A green shade for the call button */
+  }
+  
+  /* For smartphone mode */
+  @media (max-width: 768px) {
+    .fixed-contact-logo {
+      bottom: 15px; /* Adjust distance from the bottom for smaller screens */
+      right: 10px;  /* Adjust distance from the right */
+      gap: 15px; /* Space between icons for better alignment on smaller screens */
+    }
+  
+    .logo {
+      width: 60px; /* Slightly larger icons on mobile */
+      height: 60px;
+    }
+  }
