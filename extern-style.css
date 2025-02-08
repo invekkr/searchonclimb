@@ -30,6 +30,9 @@
     transform: scale(1.1); /* Slight zoom on hover */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   }
+  .insta-icon {
+    background: linear-gradient(45deg, #6a85e6, #7a75e0, #a56ccf, #d96aab, #e6688f, #ff6b6b, #ff8f6b, #ffa166, #ffc266, #ffdf99);
+  }
   
   .whats-icon {
     background-color: #25d366; /* WhatsApp green color */

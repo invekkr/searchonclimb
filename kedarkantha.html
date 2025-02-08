@@ -5,6 +5,7 @@
 	<title>Search On Climb</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" href="images/icons/socLogo.jpg">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
@@ -23,31 +24,28 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="extern-style.css">
-	<link rel="stylesheet" href="details-style.css">
 </head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			
-			<div><a class="navbar-brand" href="index.html">Search On Climb</a></div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<div class="container">
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="destination.html" class="nav-link">Trek</a></li>
-					<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Gallery</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
+		<div><a class="navbar-brand" href="index.html">Search On Climb</a></div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+			aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		</button>
+
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="trek.html" class="nav-link">Trek</a></li>
+				<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
 		</div>
-	</nav>
+	</div>
+</nav>
 	<!-- END nav -->
 
 	<div class="hero-wrap js-fullheight" style="background-image: url('images/Kedarkantha/kedarkantha_1.jpeg');">
@@ -93,7 +91,7 @@
 													<div class="form-group p-4">
 														<label for="#">Start Date</label>
 														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<div class="icon" style="pointer-events: none;"><span class="fa fa-calendar"></span></div>
 															<input type="text" class="form-control checkin_date"
 																placeholder="Start Date" >
 														</div>
@@ -103,7 +101,7 @@
 													<div class="form-group p-4">
 														<label for="#">End Date</label>
 														<div class="form-field">
-															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<div class="icon" style="pointer-events: none;"><span class="fa fa-calendar"></span></div>
 															<input type="text" class="form-control checkout_date"
 																placeholder="End Date">
 														</div>
@@ -114,7 +112,7 @@
 														<label for="#">Person</label>
 														<div class="form-field">
 															<div class="select-wrap">
-																<div class="icon"><span
+																<div class="icon" style="pointer-events: none;"><span
 																		class="fa fa-chevron-down"></span></div>
 																<select name="" id="" class="form-control">
 																	<option value="">1</option>
@@ -335,15 +333,13 @@
 
 	
 
-	<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/background/range.jpg);">
+	<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-color: black;">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md pt-5">
 					<div class="ftco-footer-widget pt-md-5 mb-4">
 						<h2 class="ftco-heading-2">Thanks For Visiting</h2>
-						<p>Search On Climb is a team comprising of members who have madness, passion, wilderness & a
-							whole lot
-							of adventure instilled deep in their hearts.</p>
+						
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
 							<li class="ftco-animate"><a href="https://wa.link/rgugk4"><span
 										class="fa fa-whatsapp"></span></a></li>
@@ -359,11 +355,11 @@
 						<h2 class="ftco-heading-2">Infromation</h2>
 						<ul class="list-unstyled">
 							<li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-							<li><a href="#" class="py-2 d-block">General Enquiries</a></li>
+							
 							<li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
 							<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
 							<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Call Us</a></li>
+							<li><a href="tel:+91-8279454604" class="py-2 d-block">Call Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -385,7 +381,8 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon fa fa-map-marker"></span><span class="custom-text">Uttrakhand</span></li>
+								<li><span class="icon fa fa-map-marker"></span><span
+										class="custom-text">Uttrakhand</span></li>
 								<li><a href="tel:+91-8279454604"><span class="icon fa fa-phone"></span><span
 											class="custom-text">+91-8279454604</span></a></li>
 								<li><a href="https://wa.link/rgugk4"><span class="icon fa fa-paper-plane"></span><span
@@ -411,14 +408,16 @@
 	</footer>
 
 	<div class="fixed-contact-logo">
-        <a href="https://wa.link/rgugk4" target="_blank" class="logo whats-icon" title="Chat on WhatsApp">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
-        </a>
-        <a href="tel:+91-8279454604" class="logo tele-icon" title="Call Now">
-            <img src="images/icons/telephone.png" alt="Call Logo" />
-        </a>
-    </div>
-
+		<a href="https://www.instagram.com/searchonclimb/" target="_blank" class="logo insta-icon" title="Chat on Instagram">
+			<img src="images/icons/insta.png" alt="Instagram Logo" />
+		</a>
+		<a href="https://wa.link/rgugk4" target="_blank" class="logo whats-icon" title="Chat on WhatsApp">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+		</a>
+		<a href="tel:+91-8279454604" class="logo tele-icon" title="Call Now">
+			<img src="images/icons/telephone.png" alt="Call Logo" />
+		</a>
+	</div>
 
 
 	<!-- loader -->
