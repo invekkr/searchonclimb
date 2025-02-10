@@ -104,6 +104,17 @@
 	  console.log('show');
 	});
 
+    // DropDown toggler
+    $('.navbar-toggler').on('click', function () {
+        var icon = $(this).find('i.fa');
+    
+        if (icon.hasClass('fa-bars')) {
+            icon.removeClass('fa-bars').addClass('fa-times'); // Change to cross icon
+        } else {
+            icon.removeClass('fa-times').addClass('fa-bars'); // Change back to hamburger
+        }
+    });
+
 	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){
