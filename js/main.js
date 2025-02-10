@@ -12,15 +12,21 @@
   });
 
 
-	var fullHeight = function() {
+    var fullHeight = function() {
+        var windowHeight = $(window).height();
+        var isMobile = $(window).width() <= 768; 
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
+        $('.js-fullheight').css('height', isMobile ? windowHeight / 5 * 3 : windowHeight);
 
-	};
-	fullHeight();
+        $(window).resize(function() {
+            var newWindowHeight = $(window).height();
+            var isNowMobile = $(window).width() <= 768;
+            $('.js-fullheight').css('height', isNowMobile ? newWindowHeight / 5 * 3 : newWindowHeight);
+        });
+    };
+
+    fullHeight();
+
 
 	// loader
 	var loader = function() {
