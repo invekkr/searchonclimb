@@ -16,7 +16,7 @@
         var windowHeight = $(window).height();
         var isMobile = $(window).width() <= 768; 
 
-        $('.js-fullheight').css('height', isMobile ? windowHeight / 5 * 3 : windowHeight);
+        $('.js-fullheight').css('height', isMobile ? windowHeight / 4 * 3 : windowHeight);
 
         $(window).resize(function() {
             var newWindowHeight = $(window).height();
