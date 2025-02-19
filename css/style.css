@@ -4755,7 +4755,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -11255,11 +11255,11 @@ h5,
   width: 100%;
 }
 
-/* iPhones only - Override background behavior */
+
 @supports (-webkit-touch-callout: none) {
     .hero-wrap {
-      background-attachment: scroll !important; /* Prevent extreme zoom */
-      background-position: center top !important; /* Ensures cropping is done properly */
+      background-attachment: scroll !important; 
+      background-position: center top !important; 
     }
   }
 
@@ -13183,25 +13183,13 @@ textarea.form-control {
 
 .navbar-logo-wide {
     height: 100%; /* Makes it fit within the navbar */
-    max-height: 50px; /* Adjust based on navbar height */
+    max-height: 25px; /* Adjust based on navbar height */
     width: auto; /* Maintain aspect ratio */
     object-fit: contain;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar-logo-wide {
-        max-height: 40px; /* Reduce size for smaller screens */
-        max-width: 80%; /* Ensures it doesn’t overflow */
-    }
-}
 
-@media (max-width: 480px) {
-    .navbar-logo-wide {
-        max-height: 30px; /* Smaller height for very small screens */
-        max-width: 70%; /* Prevents overflow */
-    }
-}
 
 .logo {
   width: 50px;
@@ -13213,6 +13201,7 @@ textarea.form-control {
   border-radius: 50%; /* Make it circular */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for effect */
   transition: transform 0.3s ease; /* Smooth scaling animation */
+  margin-right: 1rem;
 }
 
 .logo img {
@@ -13355,4 +13344,16 @@ h2 {
   .faq-question {
       font-size: 14px;
   }
+}
+
+.fix {
+    padding-top: 1rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .fix {
+        padding-top: 0.5rem !important;
+
+    }
 }
