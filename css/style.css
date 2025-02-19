@@ -11255,14 +11255,13 @@ h5,
   width: 100%;
 }
 
-/* Fix for iPhones to prevent zooming */
-@media (max-width: 768px) {
-  .hero-wrap {
-    /* background-size: contain; Ensures the whole image is visible */
-    background-attachment: scroll; /* Prevents issues with fixed backgrounds on iOS */
-    background-position: center top; /* Adjusts alignment */
+/* iPhones only - Override background behavior */
+@supports (-webkit-touch-callout: none) {
+    .hero-wrap {
+      background-attachment: scroll !important; /* Prevent extreme zoom */
+      background-position: center top !important; /* Ensures cropping is done properly */
+    }
   }
-}
 
 .slider-text {
   position: relative;
