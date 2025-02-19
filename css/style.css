@@ -11255,6 +11255,15 @@ h5,
   width: 100%;
 }
 
+/* Fix for iPhones to prevent zooming */
+@media (max-width: 768px) {
+  .hero-wrap {
+    /* background-size: contain; Ensures the whole image is visible */
+    background-attachment: scroll; /* Prevents issues with fixed backgrounds on iOS */
+    background-position: center top; /* Adjusts alignment */
+  }
+}
+
 .slider-text {
   position: relative;
 }
@@ -13171,6 +13180,28 @@ textarea.form-control {
   display: flex;
   flex-direction: column; /* Stack icons vertically */
   gap: 10px; /* Space between the icons */
+}
+
+.navbar-logo-wide {
+    height: 100%; /* Makes it fit within the navbar */
+    max-height: 50px; /* Adjust based on navbar height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-logo-wide {
+        max-height: 40px; /* Reduce size for smaller screens */
+        max-width: 80%; /* Ensures it doesn’t overflow */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo-wide {
+        max-height: 30px; /* Smaller height for very small screens */
+        max-width: 70%; /* Prevents overflow */
+    }
 }
 
 .logo {
